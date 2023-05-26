@@ -1,0 +1,32 @@
+{
+  "name": "smart-sender/php-sdk",
+  "description": "PHP library for the Smart Sender API.",
+  "keywords": ["smart-sender", "sdk", "api"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Smart Sender",
+      "email": "legal@smartsender.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "guzzlehttp/guzzle": "^7.0.1",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SmartSender\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SmartSender\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
