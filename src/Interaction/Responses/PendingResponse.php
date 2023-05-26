@@ -11,7 +11,7 @@
 
 namespace SmartSender\Interaction\Responses;
 
-use SmartSender\Foundation\Collection;
+use SmartSender\Common\Collection;
 use SmartSender\Exceptions\BadResponseException;
 
 /**

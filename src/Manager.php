@@ -11,21 +11,14 @@
 
 namespace SmartSender;
 
-use JsonException;
-use GuzzleHttp\RequestOptions;
-use SmartSender\Interaction\Parser;
-use GuzzleHttp\Client as HttpClient;
-use GuzzleHttp\Exception\GuzzleException;
-use GuzzleHttp\Exception\BadResponseException;
+use SmartSender\Foundation\Resources\CoreFactory;
 use SmartSender\Contracts\Client as ClientContract;
-use SmartSender\Exceptions\InvalidResponseException;
-use GuzzleHttp\ClientInterface as HttpClientContract;
-use SmartSender\Interaction\Responses\PendingResponse;
-use SmartSender\Contracts\Endpoint as EndpointContract;
-use Psr\Http\Message\ResponseInterface as ResponseContract;
 
 /**
- * API manager.
+ * Package manager.
+ *
+ * @property-read \SmartSender\Foundation\Resources\Source\ConsoleFactory   $console
+ * @property-read \SmartSender\Foundation\Resources\Source\MessengerFactory $messenger
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
@@ -35,6 +28,11 @@ class Manager
      * @var \SmartSender\Contracts\Client
      */
     private ClientContract $client;
+
+    /**
+     * @var \SmartSender\Foundation\Resources\CoreFactory|null
+     */
+    private ?CoreFactory $factory = null;
 
     /**
      * Setup client.
@@ -47,115 +45,19 @@ class Manager
     }
 
     /**
-     * Retrieve client.
+     * Retrieve given property.
      *
-     * @return \SmartSender\Contracts\Client
-     */
-    public function getClient(): ClientContract
-    {
-        return $this->client;
-    }
-
-    /**
-     * Setup client.
-     *
-     * @param \SmartSender\Contracts\Client $client
-     *
-     * @return void
-     */
-    public function setClient(ClientContract $client): void
-    {
-        $this->client = $client;
-    }
-
-    /**
-     * Calling over resource.
-     *
-     * @param \SmartSender\Contracts\Endpoint $endpoint
+     * @param string $name
      *
      * @return mixed
-     *
-     * @throws \SmartSender\Exceptions\BadResponseException
-     * @throws \SmartSender\Exceptions\InvalidResponseException
      */
-    public function call(EndpointContract $endpoint)
+    public function __get(string $name)
     {
-        try {
-            // requests for endpoint
-            $response = $this->process($endpoint);
-
-            // tries to collect source
-            $source = Parser::jsonDecode($response->getBody()->getContents());
-        } catch (JsonException $e) {
-            // decorates exception
-            throw new InvalidResponseException($e->getMessage(), $e->getCode());
+        if (null === $this->factory) {
+            // initialize new factory instance
+            $this->factory = new CoreFactory($this->client);
         }
 
-        return $endpoint->getAdapted(new PendingResponse($source));
-    }
-
-    /**
-     * Retrieve HTTP client.
-     *
-     * @return \GuzzleHttp\ClientInterface
-     */
-    protected function getHttpClient(): HttpClientContract
-    {
-        return new HttpClient();
-    }
-
-    /**
-     * Retrieve request url.
-     *
-     * @param \SmartSender\Contracts\Endpoint $endpoint
-     *
-     * @return string
-     */
-    private function getRequestUrl(EndpointContract $endpoint): string
-    {
-        [$baseUri, $version] = Config::getInstance()->getValues('baseUri', 'version');
-
-        return sprintf('%s/%s/%s', $baseUri, $version, $endpoint->getType());
-    }
-
-    /**
-     * Enhance endpoint options.
-     *
-     * @param \SmartSender\Contracts\Endpoint $endpoint
-     *
-     * @return array
-     */
-    private function enhanceOptions(EndpointContract $endpoint): array
-    {
-        return array_merge_recursive($endpoint->getOptions(), [
-            RequestOptions::HEADERS => [
-                'Authorization' => sprintf('Bearer %s', $this->client->getAccessToken()),
-            ],
-        ]);
-    }
-
-    /**
-     * Process given endpoint.
-     *
-     * @param \SmartSender\Contracts\Endpoint $endpoint
-     *
-     * @return \Psr\Http\Message\ResponseInterface
-     *
-     * @throws \SmartSender\Exceptions\InvalidResponseException
-     */
-    protected function process(EndpointContract $endpoint): ResponseContract
-    {
-        $url = $this->getRequestUrl($endpoint);
-
-        try {
-            // requests for endpoint
-            return $this->getHttpClient()->request($endpoint->getMethod(), $url, $this->enhanceOptions($endpoint));
-        } catch (BadResponseException $e) {
-            // retrieve source
-            return $e->getResponse();
-        } catch (GuzzleException $e) {
-            // decorates exception
-            throw new InvalidResponseException($e->getMessage(), $e->getCode());
-        }
+        return $this->factory->__get($name);
     }
 }

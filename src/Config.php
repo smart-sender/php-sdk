@@ -11,7 +11,7 @@
 
 namespace SmartSender;
 
-use SmartSender\Foundation\Accessor;
+use SmartSender\Common\Accessor;
 
 /**
  * Platform config.

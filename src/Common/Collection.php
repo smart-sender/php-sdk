@@ -9,7 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace SmartSender\Foundation;
+namespace SmartSender\Common;
+
+use Closure;
+use LogicException;
 
 /**
  * Setup collection.
@@ -41,6 +44,41 @@ class Collection
     public function all(): array
     {
         return $this->context;
+    }
+
+    /**
+     * Retrieve first instance.
+     *
+     * @return mixed
+     */
+    public function first()
+    {
+        return current($this->context);
+    }
+
+    /**
+     * Retrieve first instance or fail.
+     *
+     * @return mixed
+     */
+    public function firstOrFail()
+    {
+        return $this->first() ?: Accessor::value(static function () {
+            // notifies for missing value
+            throw new LogicException('Value is missing');
+        });
+    }
+
+    /**
+     * Filter given collection.
+     *
+     * @param \Closure $closure
+     *
+     * @return static
+     */
+    public function filter(Closure $closure): Collection
+    {
+        return new static(array_filter($this->context, $closure));
     }
 
     /**

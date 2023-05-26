@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace SmartSender\Foundation;
+namespace SmartSender\Common;
 
 use Closure;
 
