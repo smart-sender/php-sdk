@@ -25,8 +25,13 @@ class TestX extends TestCase
 
         $manager = new Manager($client);
 
-        $response = $manager->messenger->chats->select(1234)->close();
+        $response = $manager->messenger->funnels->collect([
+            'page' => 1,
+            'limitation' => 15,
+        ]);
 
-        var_dump($response->getState());
+        $funnel = $response->getCollection()->first();
+
+        var_dump($funnel->test);
     }
 }

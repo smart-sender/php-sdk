@@ -9,27 +9,24 @@
  * file that was distributed with this source code.
  */
 
-namespace SmartSender\Common\Models\Messenger;
+namespace SmartSender\Interaction\Responses\Console\Contacts;
 
 use SmartSender\Common\Models\Model;
+use SmartSender\Common\Models\Messenger\Gate;
+use SmartSender\Interaction\Responses\General\CollectResponse;
 
 /**
- * Messenger gate.
- *
- * @property-read int  $id
- * @property-read bool $subscribed
- * @property-read int  $unreadMessages
+ * Contact gates response.
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
-class Gate extends Model
+class ContactGatesResponse extends CollectResponse
 {
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
-    protected const CASTERS = [
-        'channel' => [
-            'class' => Channel::class,
-        ],
-    ];
+    protected function createModel(array $context): Model
+    {
+        return Gate::create($context);
+    }
 }

@@ -9,27 +9,26 @@
  * file that was distributed with this source code.
  */
 
-namespace SmartSender\Common\Models\Messenger;
+namespace SmartSender\Common\Models\Console;
 
 use SmartSender\Common\Models\Model;
 
 /**
- * Messenger gate.
+ * Console variable.
  *
- * @property-read int  $id
- * @property-read bool $subscribed
- * @property-read int  $unreadMessages
+ * @property-read int    $id
+ * @property-read string $name
+ * @property-read array  $content
+ *
+ * @property-read string|null $value
+ * @property-read string|null $description
+ *
+ * @property-read string $createdAt
+ * @property-read string $updatedAt
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
-class Gate extends Model
+class Variable extends Model
 {
-    /**
-     * @inheritdoc
-     */
-    protected const CASTERS = [
-        'channel' => [
-            'class' => Channel::class,
-        ],
-    ];
+    //
 }

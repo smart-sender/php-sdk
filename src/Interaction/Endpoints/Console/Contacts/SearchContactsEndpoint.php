@@ -9,27 +9,22 @@
  * file that was distributed with this source code.
  */
 
-namespace SmartSender\Common\Models\Messenger;
+namespace SmartSender\Interaction\Endpoints\Console\Contacts;
 
-use SmartSender\Common\Models\Model;
+use SmartSender\Interaction\Endpoints\Console\Contacts\CollectContactsEndpoint;
 
 /**
- * Messenger gate.
- *
- * @property-read int  $id
- * @property-read bool $subscribed
- * @property-read int  $unreadMessages
+ * Search contacts endpoint.
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
-class Gate extends Model
+class SearchContactsEndpoint extends CollectContactsEndpoint
 {
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
-    protected const CASTERS = [
-        'channel' => [
-            'class' => Channel::class,
-        ],
-    ];
+    public function getType(): string
+    {
+        return sprintf('%s/search', parent::getType());
+    }
 }

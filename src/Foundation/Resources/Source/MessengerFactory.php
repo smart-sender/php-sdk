@@ -19,6 +19,7 @@ use SmartSender\Foundation\Resources\Source\Messenger\FunnelService;
  * Messenger factory.
  *
  * @property-read \SmartSender\Foundation\Resources\Source\Messenger\ChatService $chats
+ * @property-read \SmartSender\Foundation\Resources\Source\Messenger\FunnelService $funnels
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

@@ -34,7 +34,11 @@ class Chat extends Model
      * @inheritdoc
      */
     protected const CASTERS = [
-        'gate' => Gate::class,
-        'serviceContact' => ServiceContact::class,
+        'gate' => [
+            'class' => Gate::class,
+        ],
+        'serviceContact' => [
+            'class' => ServiceContact::class,
+        ],
     ];
 }
