@@ -25,8 +25,8 @@ class TestX extends TestCase
 
         $manager = new Manager($client);
 
-        $response = $manager->console->account->me();
+        $response = $manager->messenger->chats->select(1234)->close();
 
-        var_dump($response->getName());
+        var_dump($response->getState());
     }
 }

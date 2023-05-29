@@ -9,23 +9,25 @@
  * file that was distributed with this source code.
  */
 
-namespace SmartSender\Interaction\Responses\Console\Tags;
+namespace SmartSender\Common\Models\Messenger;
 
-use SmartSender\Common\Models\Console\Tag;
-use SmartSender\Interaction\Responses\General\CollectResponse;
+use SmartSender\Common\Models\Model;
 
 /**
- * Collect tags response.
+ * Messenger gate.
+ *
+ * @property-read int  $id
+ * @property-read bool $subscribed
+ * @property-read int  $unreadMessages
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
-class CollectTagsResponse extends CollectResponse
+class Gate extends Model
 {
     /**
-     * @inheritDoc
+     * @inheritdoc
      */
-    protected function createModel(array $context): Tag
-    {
-        return Tag::create($context);
-    }
+    protected const CASTERS = [
+        'channel' => Channel::class,
+    ];
 }

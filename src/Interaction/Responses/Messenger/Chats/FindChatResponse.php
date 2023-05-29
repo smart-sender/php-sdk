@@ -9,27 +9,27 @@
  * file that was distributed with this source code.
  */
 
-namespace SmartSender\Interaction\Responses\Console\Tags;
+namespace SmartSender\Interaction\Responses\Messenger\Chats;
 
-use SmartSender\Common\Models\Console\Tag;
+use SmartSender\Common\Models\Messenger\Chat;
 use SmartSender\Interaction\Responses\BaseResponse;
 
 /**
- * Create tag response.
+ * Find chat response.
  *
- * @see \SmartSender\Interaction\Endpoints\Console\Tags\CreateTagEndpoint
+ * @see \SmartSender\Interaction\Endpoints\Messenger\Chats\FindChatEndpoint
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
-class CreateTagResponse extends BaseResponse
+class FindChatResponse extends BaseResponse
 {
     /**
-     * Retrieve tag.
+     * Retrieve chat.
      *
-     * @return \SmartSender\Common\Models\Console\Tag
+     * @return \SmartSender\Common\Models\Messenger\Chat
      */
-    public function getTag(): Tag
+    public function getChat(): Chat
     {
-        return Tag::create($this->response->all());
+        return Chat::create($this->response->all());
     }
 }

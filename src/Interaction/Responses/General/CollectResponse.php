@@ -11,6 +11,8 @@
 
 namespace SmartSender\Interaction\Responses\General;
 
+use SmartSender\Common\Collection;
+use SmartSender\Common\Models\Model;
 use SmartSender\Common\General\Cursor;
 use SmartSender\Interaction\Responses\BaseResponse;
 
@@ -19,7 +21,7 @@ use SmartSender\Interaction\Responses\BaseResponse;
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
-class CollectResponse extends BaseResponse
+abstract class CollectResponse extends BaseResponse
 {
     /**
      * Retrieve cursor.
@@ -30,4 +32,25 @@ class CollectResponse extends BaseResponse
     {
         return Cursor::create($this->getValueFromResponse('cursor'));
     }
+
+    /**
+     * Retrieve collection.
+     *
+     * @return \SmartSender\Common\Collection
+     */
+    public function getCollection(): Collection
+    {
+        $tags = array_map([$this, 'createModel'], $this->getValueFromResponse('collection'));
+
+        return new Collection($tags);
+    }
+
+    /**
+     * Creates model.
+     *
+     * @param array $context
+     *
+     * @return \SmartSender\Common\Models\Model
+     */
+    abstract protected function createModel(array $context): Model;
 }

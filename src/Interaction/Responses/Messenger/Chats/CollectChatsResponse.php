@@ -9,23 +9,25 @@
  * file that was distributed with this source code.
  */
 
-namespace SmartSender\Interaction\Responses\Console\Tags;
+namespace SmartSender\Interaction\Responses\Messenger\Chats;
 
-use SmartSender\Common\Models\Console\Tag;
+use SmartSender\Common\Models\Messenger\Chat;
 use SmartSender\Interaction\Responses\General\CollectResponse;
 
 /**
- * Collect tags response.
+ * Collect chats response.
+ *
+ * @see \SmartSender\Interaction\Endpoints\Messenger\Chats\CollectChatsEndpoint
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
-class CollectTagsResponse extends CollectResponse
+class CollectChatsResponse extends CollectResponse
 {
     /**
      * @inheritDoc
      */
-    protected function createModel(array $context): Tag
+    protected function createModel(array $context): Chat
     {
-        return Tag::create($context);
+        return Chat::create($context);
     }
 }

@@ -11,12 +11,25 @@
 
 namespace SmartSender\Foundation\Resources\Source;
 
+use SmartSender\Foundation\Factory;
+use SmartSender\Foundation\Resources\Source\Messenger\ChatService;
+
 /**
  * Messenger factory.
  *
+ * @property-read \SmartSender\Foundation\Resources\Source\Messenger\ChatService $chats
+ *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
-class MessengerFactory
+class MessengerFactory extends Factory
 {
-
+    /**
+     * @inheritDoc
+     */
+    protected function getServiceMap(): array
+    {
+        return [
+            'chats' => ChatService::class,
+        ];
+    }
 }
