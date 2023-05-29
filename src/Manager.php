@@ -45,6 +45,18 @@ class Manager
     }
 
     /**
+     * Creates default instance.
+     *
+     * @return static
+     */
+    public static function default(): self
+    {
+        $client = Client::default();
+
+        return new self($client);
+    }
+
+    /**
      * Retrieve given property.
      *
      * @param string $name

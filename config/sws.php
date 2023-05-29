@@ -25,6 +25,18 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Smart Sender Access Token.
+    |--------------------------------------------------------------------------
+    |
+    | This option defines "default" platform access token
+    | that will be used through every request.
+    |
+    */
+
+    'accessToken' => getenv('SMART_SENDER_ACCESS_TOKEN') ?: 'abc1234',
+
+    /*
+    |--------------------------------------------------------------------------
     | Smart Sender Base URI.
     |--------------------------------------------------------------------------
     |

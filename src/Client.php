@@ -36,6 +36,18 @@ class Client implements ClientContract
     }
 
     /**
+     * Creates default instance.
+     *
+     * @return static
+     */
+    public static function default(): self
+    {
+        $accessToken = Config::getInstance()->getValue('accessToken');
+
+        return new self($accessToken);
+    }
+
+    /**
      * @inheritDoc
      */
     public function getAccessToken(): string
