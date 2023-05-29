@@ -13,6 +13,7 @@ namespace SmartSender\Foundation\Resources\Source;
 
 use SmartSender\Foundation\Factory;
 use SmartSender\Foundation\Resources\Source\Messenger\ChatService;
+use SmartSender\Foundation\Resources\Source\Messenger\FunnelService;
 
 /**
  * Messenger factory.
@@ -30,6 +31,7 @@ class MessengerFactory extends Factory
     {
         return [
             'chats' => ChatService::class,
+            'funnels' => FunnelService::class,
         ];
     }
 }

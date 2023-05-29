@@ -1,0 +1,33 @@
+<?php declare(strict_types=1);
+
+/**
+ * This file is part of Smart Web Services package
+ *
+ * (c) Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace SmartSender\Interaction\Responses\Messenger\Funnels;
+
+use SmartSender\Common\Models\Messenger\Funnel;
+use SmartSender\Interaction\Responses\General\CollectResponse;
+
+/**
+ * Collect funnels response.
+ *
+ * @see \SmartSender\Interaction\Endpoints\Messenger\Funnels\CollectFunnelsEndpoint
+ *
+ * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
+ */
+class CollectFunnelsResponse extends CollectResponse
+{
+    /**
+     * @inheritDoc
+     */
+    protected function createModel(array $context): Funnel
+    {
+        return Funnel::create($context);
+    }
+}
