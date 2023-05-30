@@ -15,13 +15,15 @@ use SmartSender\Foundation\Factory;
 use SmartSender\Foundation\Resources\Source\Console\TagService;
 use SmartSender\Foundation\Resources\Source\Console\ContactService;
 use SmartSender\Foundation\Resources\Source\Console\AccountService;
+use SmartSender\Foundation\Resources\Source\Console\VariableService;
 
 /**
  * Console factory.
  *
- * @property-read \SmartSender\Foundation\Resources\Source\Console\TagService     $tags
- * @property-read \SmartSender\Foundation\Resources\Source\Console\AccountService $account
- * @property-read \SmartSender\Foundation\Resources\Source\Console\ContactService $contacts
+ * @property-read \SmartSender\Foundation\Resources\Source\Console\TagService      $tags
+ * @property-read \SmartSender\Foundation\Resources\Source\Console\AccountService  $account
+ * @property-read \SmartSender\Foundation\Resources\Source\Console\ContactService  $contacts
+ * @property-read \SmartSender\Foundation\Resources\Source\Console\VariableService $variables
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
@@ -36,6 +38,7 @@ class ConsoleFactory extends Factory
             'tags' => TagService::class,
             'account' => AccountService::class,
             'contacts' => ContactService::class,
+            'variables' => VariableService::class,
         ];
     }
 }
