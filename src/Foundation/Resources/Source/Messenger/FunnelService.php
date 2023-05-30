@@ -40,7 +40,7 @@ class FunnelService extends Service
     }
 
     /**
-     * Retrieve chats.
+     * Retrieve funnels.
      *
      * @param array $resource
      *

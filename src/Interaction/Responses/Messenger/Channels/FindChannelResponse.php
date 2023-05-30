@@ -9,27 +9,27 @@
  * file that was distributed with this source code.
  */
 
-namespace SmartSender\Interaction\Responses\Messenger\Funnels;
+namespace SmartSender\Interaction\Responses\Messenger\Channels;
 
-use SmartSender\Common\Models\Messenger\Funnel;
+use SmartSender\Common\Models\Messenger\Channel;
 use SmartSender\Interaction\Responses\BaseResponse;
 
 /**
- * Find funnel response.
+ * Find channel response.
  *
  * @see \SmartSender\Interaction\Endpoints\Messenger\Funnels\FindFunnelEndpoint
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
-class FindFunnelResponse extends BaseResponse
+class FindChannelResponse extends BaseResponse
 {
     /**
-     * Retrieve funnel.
+     * Retrieve channel.
      *
-     * @return \SmartSender\Common\Models\Messenger\Funnel
+     * @return \SmartSender\Common\Models\Messenger\Channel
      */
-    public function getFunnel(): Funnel
+    public function getChannel(): Channel
     {
-        return Funnel::create($this->response->all());
+        return Channel::create($this->response->all());
     }
 }

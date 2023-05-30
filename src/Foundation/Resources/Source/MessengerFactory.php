@@ -14,12 +14,14 @@ namespace SmartSender\Foundation\Resources\Source;
 use SmartSender\Foundation\Factory;
 use SmartSender\Foundation\Resources\Source\Messenger\ChatService;
 use SmartSender\Foundation\Resources\Source\Messenger\FunnelService;
+use SmartSender\Foundation\Resources\Source\Messenger\ChannelService;
 
 /**
  * Messenger factory.
  *
- * @property-read \SmartSender\Foundation\Resources\Source\Messenger\ChatService $chats
+ * @property-read \SmartSender\Foundation\Resources\Source\Messenger\ChatService   $chats
  * @property-read \SmartSender\Foundation\Resources\Source\Messenger\FunnelService $funnels
+ * @property-read \SmartSender\Foundation\Resources\Source\Messenger\ChannelService $channels
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
@@ -33,6 +35,7 @@ class MessengerFactory extends Factory
         return [
             'chats' => ChatService::class,
             'funnels' => FunnelService::class,
+            'channels' => ChannelService::class,
         ];
     }
 }
