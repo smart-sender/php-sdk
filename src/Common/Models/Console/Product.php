@@ -12,32 +12,32 @@
 namespace SmartSender\Common\Models\Console;
 
 use SmartSender\Common\Models\Model;
-use SmartSender\Common\Models\Console\Invoices\InvoiceLog;
 use SmartSender\Common\Models\Console\Products\ProductEssence;
 
 /**
- * Console invoice.
+ * Console product.
  *
- * @property-read int $id
- * @property-read string $orderId
+ * @property-read int    $id
+ * @property-read string $name
  * @property-read string $createdAt
- * @property-read string $checkoutUrl
  *
- * @property-read \SmartSender\Common\Collection $logs
+ * @property-read \SmartSender\Common\Collection $labels
+ * @property-read \SmartSender\Common\Collection $essences
+ * @property-read \SmartSender\Common\Collection $paymentSystems
  *
- * @property-read \SmartSender\Common\Models\Console\Products\ProductEssence $essence
- * @property-read \SmartSender\Common\Models\Console\PaymentSystem           $paymentSystem
+ * @property-read \SmartSender\Common\Models\Console\Category|null $category
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
-class Invoice extends Model
+class Product extends Model
 {
     /**
      * @inheritdoc
      */
     protected const CASTERS = [
-        'logs' => InvoiceLog::class,
-        'essence' => ProductEssence::class,
-        'paymentSystem' => PaymentSystem::class,
+        'labels' => Label::class,
+        'category' => Category::class,
+        'essences' => ProductEssence::class,
+        'paymentSystems' => PaymentSystem::class,
     ];
 }

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace SmartSender\Common\Models\Console;
+namespace SmartSender\Common\Models\Console\Products;
 
 use SmartSender\Common\Models\Model;
 

@@ -64,6 +64,11 @@ class Model implements JsonSerializable
     {
         $value = $this->context[$name] ?? null;
 
+        if (!$value) {
+            // retrieve missing value
+            return null;
+        }
+
         // if caster specified
         if ($caster = $this->getCaster($name)) {
             // if nested attributes

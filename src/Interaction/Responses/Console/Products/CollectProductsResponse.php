@@ -9,25 +9,25 @@
  * file that was distributed with this source code.
  */
 
-namespace SmartSender\Interaction\Responses\Console\Contacts\Selection;
+namespace SmartSender\Interaction\Responses\Console\Products;
 
-use SmartSender\Common\Models\Console\Products\ProductEssence;
+use SmartSender\Common\Models\Console\Product;
 use SmartSender\Interaction\Responses\General\CollectResponse;
 
 /**
- * Collect contact funnels response.
+ * Collect products response.
  *
- * @see \SmartSender\Interaction\Endpoints\Console\Contacts\Selection\Checkout\CollectContactCheckoutEndpoint
+ * @see \SmartSender\Interaction\Endpoints\Console\Products\CollectProductsEndpoint
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
-class CollectContactCheckoutResponse extends CollectResponse
+class CollectProductsResponse extends CollectResponse
 {
     /**
      * @inheritDoc
      */
-    protected function createModel(array $context): ProductEssence
+    protected function createModel(array $context): Product
     {
-        return ProductEssence::create($context);
+        return Product::create($context);
     }
 }

@@ -13,6 +13,7 @@ namespace SmartSender\Foundation\Resources\Source;
 
 use SmartSender\Foundation\Factory;
 use SmartSender\Foundation\Resources\Source\Console\TagService;
+use SmartSender\Foundation\Resources\Source\Console\ProductService;
 use SmartSender\Foundation\Resources\Source\Console\ContactService;
 use SmartSender\Foundation\Resources\Source\Console\AccountService;
 use SmartSender\Foundation\Resources\Source\Console\VariableService;
@@ -22,6 +23,7 @@ use SmartSender\Foundation\Resources\Source\Console\VariableService;
  *
  * @property-read \SmartSender\Foundation\Resources\Source\Console\TagService      $tags
  * @property-read \SmartSender\Foundation\Resources\Source\Console\AccountService  $account
+ * @property-read \SmartSender\Foundation\Resources\Source\Console\ProductService  $products
  * @property-read \SmartSender\Foundation\Resources\Source\Console\ContactService  $contacts
  * @property-read \SmartSender\Foundation\Resources\Source\Console\VariableService $variables
  *
@@ -37,6 +39,7 @@ class ConsoleFactory extends Factory
         return [
             'tags' => TagService::class,
             'account' => AccountService::class,
+            'products' => ProductService::class,
             'contacts' => ContactService::class,
             'variables' => VariableService::class,
         ];
