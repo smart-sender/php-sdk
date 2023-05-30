@@ -14,7 +14,9 @@ namespace SmartSender\Common\General;
 use JsonSerializable;
 
 /**
- * Defines cursor.
+ * The cursor indicates the current page in the selection and the maximum number of pages in the specified resource to iterate over.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676543074/Cursor+-+en
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

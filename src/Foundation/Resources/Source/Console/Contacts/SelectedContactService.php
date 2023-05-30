@@ -15,7 +15,9 @@ use SmartSender\Foundation\Service;
 use SmartSender\Contracts\Client as ClientContract;
 
 /**
- * Selected contact service.
+ * Abstract contact service.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676444281/Contacts+API+-+en
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

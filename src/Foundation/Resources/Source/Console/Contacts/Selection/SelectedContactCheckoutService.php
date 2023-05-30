@@ -16,7 +16,9 @@ use SmartSender\Interaction\Responses\Console\Contacts\Selection\CollectContactC
 use SmartSender\Interaction\Endpoints\Console\Contacts\Selection\Checkout\CollectContactCheckoutEndpoint;
 
 /**
- * Selected contact checkout service.
+ * With this API you can view the basket of your contacts.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676444474/Contact+Checkout+API+-+en
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

@@ -19,7 +19,9 @@ use SmartSender\Interaction\Endpoints\Console\Contacts\Selection\Tags\RemoveCont
 use SmartSender\Interaction\Endpoints\Console\Contacts\Selection\Tags\CollectContactTagsEndpoint;
 
 /**
- * Selected contact tag service.
+ * Using this API, you can view, add, and remove tags from a selected contact.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676575485/Contact+Tags+API+-+en
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

@@ -19,7 +19,10 @@ use SmartSender\Interaction\Responses\Messenger\Messages\CollectMessagesResponse
 use SmartSender\Interaction\Endpoints\Messenger\Messages\CollectChatMessagesEndpoint;
 
 /**
- * Message service.
+ * This API allows you to receive / send a message to a contact and also receive
+ * the entire history of correspondence with the selected contact.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676575830/Messages+API+-+en
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

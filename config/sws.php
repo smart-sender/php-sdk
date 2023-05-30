@@ -19,6 +19,8 @@ return [
     | This option defines "default" platform version
     | that will be used through every request.
     |
+    | @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676673382/API+integration+-+en
+    |
     */
 
     'version' => getenv('SMART_SENDER_VERSION') ?: 'v1',
@@ -31,6 +33,8 @@ return [
     | This option defines "default" platform access token
     | that will be used through every request.
     |
+    | @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676575286/Getting+an+API+Key+-+en
+    |
     */
 
     'accessToken' => getenv('SMART_SENDER_ACCESS_TOKEN') ?: 'abc1234',
@@ -42,6 +46,8 @@ return [
     |
     | This option defines "default" platform base uri
     | that will be used through every request.
+    |
+    | @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676673382/API+integration+-+en
     |
     */
 

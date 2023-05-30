@@ -18,7 +18,9 @@ use SmartSender\Interaction\Endpoints\Messenger\Funnels\CollectFunnelsEndpoint;
 use SmartSender\Interaction\Responses\Messenger\Funnels\CollectFunnelsResponse;
 
 /**
- * Funnel service.
+ * Using this API, you can view the created funnels in the project.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676673469/Funnels+API+-+en
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

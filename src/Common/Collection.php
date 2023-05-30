@@ -15,7 +15,7 @@ use Closure;
 use LogicException;
 
 /**
- * Setup collection.
+ * Data collection.
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

@@ -18,7 +18,9 @@ use SmartSender\Interaction\Endpoints\Messenger\Operators\CollectOperatorsEndpoi
 use SmartSender\Interaction\Endpoints\Messenger\Operators\SetOperatorInvolvementEndpoint;
 
 /**
- * Operator service.
+ * Using this API, you can view the connected operators within the service Smart Messenger
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676575799/Operators+API+-+en
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

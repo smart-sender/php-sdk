@@ -16,7 +16,9 @@ use SmartSender\Interaction\Endpoints\Console\AccountEndpoint;
 use SmartSender\Interaction\Responses\Console\AccountResponse;
 
 /**
- * Console account service.
+ * Retrieve information about current account (project that issued access token).
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676575286/Getting+an+API+Key+-+en
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

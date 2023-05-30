@@ -20,7 +20,9 @@ use SmartSender\Interaction\Responses\Messenger\Channels\CollectChannelsResponse
 use SmartSender\Interaction\Endpoints\Messenger\Channels\CollectChannelsEndpoint;
 
 /**
- * Channel service.
+ * Allows you to view, find and update channels within Smart Messenger (Connected Communication Channels).
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676444598/Channels+API+-+en
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

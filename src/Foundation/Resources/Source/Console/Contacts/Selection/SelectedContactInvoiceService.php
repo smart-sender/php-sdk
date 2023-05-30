@@ -20,7 +20,9 @@ use SmartSender\Interaction\Endpoints\Console\Contacts\Selection\Invoices\Collec
 use SmartSender\Interaction\Responses\Console\Contacts\Selection\Invoices\CollectContactInvoicesResponse;
 
 /**
- * Selected contact invoice service.
+ * With this API, you can view, create, find and create accounts for the selected customer.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676411989/Contact+Invoices+API+-+en
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

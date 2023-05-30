@@ -16,6 +16,8 @@ use SmartSender\Interaction\Responses\PendingResponse;
 /**
  * Defines endpoint.
  *
+ * @link https://docs.guzzlephp.org
+ *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
 interface Endpoint

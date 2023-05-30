@@ -21,7 +21,9 @@ use SmartSender\Interaction\Endpoints\Console\Contacts\Selection\Notes\CollectCo
 use SmartSender\Interaction\Responses\Console\Contacts\Selection\Notes\CollectContactNotesResponse;
 
 /**
- * Selected contact note service.
+ * With this API, you can view, edit, create, and delete notes for the selected contact.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676444371/Contact+Notes+API+-+en
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

@@ -21,7 +21,9 @@ use SmartSender\Interaction\Endpoints\Console\Variables\CollectVariablesEndpoint
 use SmartSender\Interaction\Responses\Console\Variables\CollectVariablesResponse;
 
 /**
- * Console variable service.
+ * With this API, you can view, add, edit, and delete variables in a project.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676575629/Variables+API+-+en
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

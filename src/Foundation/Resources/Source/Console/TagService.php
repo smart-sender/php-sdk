@@ -21,7 +21,9 @@ use SmartSender\Interaction\Endpoints\Console\Tags\CollectTagsEndpoint;
 use SmartSender\Interaction\Responses\Console\Tags\CollectTagsResponse;
 
 /**
- * Console tag service.
+ * With this API, you can view, add, edit, and delete tags in a project.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676411819/Tags+API+-+en
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

@@ -21,7 +21,9 @@ use SmartSender\Interaction\Endpoints\Console\Products\CollectProductsEndpoint;
 use SmartSender\Interaction\Responses\Console\Products\CollectProductsResponse;
 
 /**
- * Console product service.
+ * With this API, you can view, add, edit, and delete products in a project.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676412034/Products+API+-+en
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

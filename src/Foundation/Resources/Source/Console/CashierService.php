@@ -17,7 +17,9 @@ use SmartSender\Interaction\Responses\Console\Cashiers\CollectCashiersResponse;
 use SmartSender\Foundation\Resources\Source\Console\Cashiers\SelectedCashierService;
 
 /**
- * Cashier service.
+ * This API makes it possible to view, find connected payment systems and view payments for the selected one.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676444559/Payments+API-+en
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

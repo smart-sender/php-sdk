@@ -16,6 +16,8 @@ use Exception;
 /**
  * Bad response exception.
  *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676575867/API+errors
+ *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
 class BadResponseException extends Exception

@@ -19,7 +19,7 @@ use SmartSender\Foundation\Resources\Source\Messenger\MessageService;
 use SmartSender\Foundation\Resources\Source\Messenger\OperatorService;
 
 /**
- * Messenger factory.
+ * Smart Sender Messenger factory.
  *
  * @property-read \SmartSender\Foundation\Resources\Source\Messenger\ChatService     $chats
  * @property-read \SmartSender\Foundation\Resources\Source\Messenger\FunnelService   $funnels

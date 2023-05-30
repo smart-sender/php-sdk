@@ -18,7 +18,9 @@ use SmartSender\Interaction\Responses\Console\Contacts\CollectContactsResponse;
 use SmartSender\Foundation\Resources\Source\Console\Contacts\MainSelectedContactService;
 
 /**
- * Contact service.
+ * Using this API, you can view, find, add, edit, merge, and delete contacts in a project.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676444281/Contacts+API+-+en
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

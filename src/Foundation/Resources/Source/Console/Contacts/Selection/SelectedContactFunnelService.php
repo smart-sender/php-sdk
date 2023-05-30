@@ -19,7 +19,9 @@ use SmartSender\Interaction\Endpoints\Console\Contacts\Selection\Funnels\RemoveC
 use SmartSender\Interaction\Endpoints\Console\Contacts\Selection\Funnels\CollectContactFunnelsEndpoint;
 
 /**
- * Selected contact funnel service.
+ * Using this API, you can view, add, and remove funnel subscriptions for a selected contact.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676444426/Contact+Funnels+API+-+en
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

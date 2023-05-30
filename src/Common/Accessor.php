@@ -14,7 +14,7 @@ namespace SmartSender\Common;
 use Closure;
 
 /**
- * Accessor.
+ * Data accessor.
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

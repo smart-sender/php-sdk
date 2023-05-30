@@ -23,7 +23,10 @@ use SmartSender\Interaction\Responses\Messenger\Chats\ChatMessagesResponse;
 use SmartSender\Interaction\Endpoints\Messenger\Chats\ChatMessagesEndpoint;
 
 /**
- * Selected chat service.
+ * Using this API, you can get a list of created chats, get information about a chat, mark it as “read” or “close”.
+ * You can also receive messages from a conversation or send a message.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676542648/Chats+API+-+en
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

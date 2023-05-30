@@ -20,7 +20,7 @@ use SmartSender\Foundation\Resources\Source\Console\AccountService;
 use SmartSender\Foundation\Resources\Source\Console\VariableService;
 
 /**
- * Console factory.
+ * Smart Sender Console factory.
  *
  * @property-read \SmartSender\Foundation\Resources\Source\Console\TagService      $tags
  * @property-read \SmartSender\Foundation\Resources\Source\Console\AccountService  $account
