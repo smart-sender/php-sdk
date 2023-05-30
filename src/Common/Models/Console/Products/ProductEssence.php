@@ -14,7 +14,9 @@ namespace SmartSender\Common\Models\Console\Products;
 use SmartSender\Common\Models\Model;
 
 /**
- * Console product essence.
+ * This object describes a product unit.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676674014/ProductEssence+-+en
  *
  * @property-read int $id
  *

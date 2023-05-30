@@ -12,7 +12,9 @@
 namespace SmartSender\Common\Models;
 
 /**
- * Defines user.
+ * This object describes a registered user in Smart Sender.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676543001/User+-+en
  *
  * @property-read int  $id
  * @property-read bool $subscribed

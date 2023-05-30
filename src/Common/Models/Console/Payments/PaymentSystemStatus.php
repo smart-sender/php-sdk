@@ -14,7 +14,9 @@ namespace SmartSender\Common\Models\Console\Payments;
 use SmartSender\Common\Models\Model;
 
 /**
- * Console payment system status.
+ * This object defines the connection status of the payment system.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676543246/PaymentSystemStatus+-+en
  *
  * @property-read string $name
  * @property-read string $color

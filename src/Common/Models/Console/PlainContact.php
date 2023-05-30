@@ -15,7 +15,9 @@ use SmartSender\Common\Models\Model;
 use SmartSender\Common\Models\Messenger\Funnel;
 
 /**
- * Console plain contact.
+ * This object describes the user (with plain variables).
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676444780/Contact+-+en
  *
  * @property-read int    $id
  * @property-read string $photo

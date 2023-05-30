@@ -15,7 +15,10 @@ use SmartSender\Common\Models\User;
 use SmartSender\Common\Models\Model;
 
 /**
- * Console note.
+ * This object describes a note about a user, contact, item, or other.
+ * This functionality is for informational purposes only.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676673818/Note+-+en
  *
  * @property-read int    $id
  * @property-read string $content

@@ -14,7 +14,10 @@ namespace SmartSender\Common\Models\Messenger;
 use SmartSender\Common\Models\Model;
 
 /**
- * Messenger chat.
+ * Chat describes all customer communication with your Smart Messenger communication channels.
+ * Each contact has one chat, but in turn can have multiple communication channels.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676444665/Chat+-+en
  *
  * @property-read int    $id
  * @property-read string $name

@@ -14,7 +14,9 @@ namespace SmartSender\Common\Models\Console\Invoices;
 use SmartSender\Common\Models\Model;
 
 /**
- * Console invoice log status.
+ * This model describes the status of an attempt to pay a bill by a contact.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676674038/InvoiceLogStatus+-+en
  *
  * @property-read int    $code
  * @property-read string $name

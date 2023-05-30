@@ -14,7 +14,9 @@ namespace SmartSender\Common\Models\Console;
 use SmartSender\Common\Models\Model;
 
 /**
- * Console payment system.
+ * This object describes the connected payment system.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676444929/PaymentSystem+-+en
  *
  * @property-read int    $id
  * @property-read string $name

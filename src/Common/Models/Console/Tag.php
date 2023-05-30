@@ -14,7 +14,9 @@ namespace SmartSender\Common\Models\Console;
 use SmartSender\Common\Models\Model;
 
 /**
- * Console tag.
+ * This object defines a tag for segmentation.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676575878/Tag+-+en
  *
  * @property-read int    $id
  * @property-read string $name

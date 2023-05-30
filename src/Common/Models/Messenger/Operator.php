@@ -16,7 +16,9 @@ use SmartSender\Common\Models\Model;
 use SmartSender\Common\Models\Messenger\Operators\OperatorStatus;
 
 /**
- * Messenger operator.
+ * This object describes a Smart Sender user within the Smart Messenger service.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676543176/Operator+-+en
  *
  * @property-read int    $id
  * @property-read string $type

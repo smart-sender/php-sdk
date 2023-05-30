@@ -14,7 +14,9 @@ namespace SmartSender\Common\Models\Console\Payments;
 use SmartSender\Common\Models\Model;
 
 /**
- * Console payment system gate.
+ * This object defines the current active merchant for the connected payment system.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676674052/PaymentSystemGate+-+en
  *
  * @property-read int    $id
  * @property-read string $type

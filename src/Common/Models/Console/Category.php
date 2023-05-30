@@ -14,7 +14,9 @@ namespace SmartSender\Common\Models\Console;
 use SmartSender\Common\Models\Model;
 
 /**
- * Console category.
+ * This object defines the category of the item.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676444878/Category+-+en
  *
  * @property-read int    $id
  * @property-read string $name

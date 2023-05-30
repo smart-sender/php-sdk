@@ -14,7 +14,10 @@ namespace SmartSender\Common\Models\Messenger;
 use SmartSender\Common\Models\Model;
 
 /**
- * Messenger service contact.
+ * Describes a contact inside a third-party service.
+ * If we take Smart Console, Console as a basis, then third-party services can be Smart Messages, Smart Push and others.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676412395/ServiceContact+-+en
  *
  * @property-read int $id
  * @property-read int $originalId

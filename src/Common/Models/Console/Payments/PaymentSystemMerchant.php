@@ -14,7 +14,9 @@ namespace SmartSender\Common\Models\Console\Payments;
 use SmartSender\Common\Models\Model;
 
 /**
- * Console payment system merchant.
+ * This object provides publicly available information about a merchant connected to a particular payment system.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676543255/PaymentSystemMerchant+-+en
  *
  * @property-read int    $id
  * @property-read string $merchantId

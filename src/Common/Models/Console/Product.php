@@ -15,7 +15,9 @@ use SmartSender\Common\Models\Model;
 use SmartSender\Common\Models\Console\Products\ProductEssence;
 
 /**
- * Console product.
+ * This object defines an item for which units can be invoiced to customers.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676575963/Product+-+en
  *
  * @property-read int    $id
  * @property-read string $name

@@ -16,7 +16,9 @@ use SmartSender\Common\Models\Console\Invoices\InvoiceLog;
 use SmartSender\Common\Models\Console\Products\ProductEssence;
 
 /**
- * Console invoice.
+ * This object describes an invoice to a contact using a payment system for a certain unit of goods.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676412276/Invoice+-+en
  *
  * @property-read int $id
  * @property-read string $orderId

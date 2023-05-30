@@ -14,7 +14,9 @@ namespace SmartSender\Common\Models\Messenger;
 use SmartSender\Common\Models\Model;
 
 /**
- * Messenger gate.
+ * This model defines a contact who came through Messenger and defines it as an “accessible method of communication”.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676444674/Gate+-+en
  *
  * @property-read int  $id
  * @property-read bool $subscribed

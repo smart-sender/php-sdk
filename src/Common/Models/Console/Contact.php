@@ -14,7 +14,9 @@ namespace SmartSender\Common\Models\Console;
 use SmartSender\Common\Models\Messenger\Funnel;
 
 /**
- * Console contact.
+ * This object describes the user (with scoped variables).
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676444780/Contact+-+en
  *
  * @property-read \SmartSender\Common\Collection $variables
  *

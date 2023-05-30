@@ -14,10 +14,11 @@ namespace SmartSender\Common\Models\Console\Invoices;
 use SmartSender\Common\Models\Model;
 
 /**
- * Console invoice log.
+ * This object describes a user's attempt to pay an invoice.
  *
- * @property-read int $id
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676412345/InvoiceLog+-+en
  *
+ * @property-read int    $id
  * @property-read string $type
  * @property-read bool   $state
  * @property-read float  $amount

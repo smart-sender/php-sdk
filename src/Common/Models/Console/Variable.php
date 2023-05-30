@@ -14,7 +14,9 @@ namespace SmartSender\Common\Models\Console;
 use SmartSender\Common\Models\Model;
 
 /**
- * Console variable.
+ * This object describes a user variable. If the user does not have the variable, the default value will be used.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676576027/Variable+-+en
  *
  * @property-read int    $id
  * @property-read string $name

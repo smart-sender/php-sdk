@@ -15,7 +15,11 @@ use SmartSender\Common\Models\Model;
 use SmartSender\Common\Models\Console\Payments\PaymentSystemGate;
 
 /**
- * Console cashier.
+ * This object defines the payment system (alias PaymentSystem) and gives more detailed information about the status and so on.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676412287/Cashier+-+en
+ *
+ * @see \SmartSender\Common\Models\Console\PaymentSystem
  *
  * @property-read int    $id
  * @property-read string $name

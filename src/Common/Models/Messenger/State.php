@@ -14,7 +14,9 @@ namespace SmartSender\Common\Models\Messenger;
 use SmartSender\Common\Models\Model;
 
 /**
- * Messenger state.
+ * This object defines the result of the operation.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676444686/State+-+en
  *
  * @property-read string      $type
  * @property-read string|null $message

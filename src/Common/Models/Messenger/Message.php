@@ -14,7 +14,9 @@ namespace SmartSender\Common\Models\Messenger;
 use SmartSender\Common\Models\Model;
 
 /**
- * Messenger message.
+ * This model defines a message in a chat.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676576008/Message+-+en
  *
  * @property-read int  $id
  * @property-read bool $internal

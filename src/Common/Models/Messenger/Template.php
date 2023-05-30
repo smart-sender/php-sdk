@@ -14,7 +14,9 @@ namespace SmartSender\Common\Models\Messenger;
 use SmartSender\Common\Models\Model;
 
 /**
- * Messenger template.
+ * This object defines the template of the message.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676444836/Template+-+en
  *
  * @property-read string $type
  * @property-read array  $resource

@@ -14,7 +14,9 @@ namespace SmartSender\Common\Models\Messenger\Operators;
 use SmartSender\Common\Models\Model;
 
 /**
- * Messenger operator status.
+ * This object describes the agent's current status with respect to the Smart Messenger service.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676543204/OperatorStatus+-+en
  *
  * @property-read int   $id
  * @property-read string $name

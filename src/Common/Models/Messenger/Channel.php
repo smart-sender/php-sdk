@@ -14,7 +14,10 @@ namespace SmartSender\Common\Models\Messenger;
 use SmartSender\Common\Models\Model;
 
 /**
- * Messenger channel.
+ * This model describes a communication channel in Smart Messenger
+ * (this can be any connected messenger integration, for example, Telegram or Viber).
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676543154/Channel+-+en
  *
  * @property-read int $id
  * @property-read bool $active

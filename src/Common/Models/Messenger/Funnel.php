@@ -14,7 +14,9 @@ namespace SmartSender\Common\Models\Messenger;
 use SmartSender\Common\Models\Model;
 
 /**
- * Messenger funnel.
+ * This object defines a funnel.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676444741/Funnel+-+en
  *
  * @property-read int    $id
  * @property-read string $name

@@ -14,7 +14,9 @@ namespace SmartSender\Common\Models\Messenger;
 use SmartSender\Common\Models\Model;
 
 /**
- * Messenger sender.
+ * This model defines the sender in the chat.
+ *
+ * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676412255/Sender+-+en
  *
  * @property-read string $type
  * @property-read string $image
