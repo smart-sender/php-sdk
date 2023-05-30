@@ -15,6 +15,7 @@ use SmartSender\Foundation\Factory;
 use SmartSender\Foundation\Resources\Source\Messenger\ChatService;
 use SmartSender\Foundation\Resources\Source\Messenger\FunnelService;
 use SmartSender\Foundation\Resources\Source\Messenger\ChannelService;
+use SmartSender\Foundation\Resources\Source\Messenger\MessageService;
 use SmartSender\Foundation\Resources\Source\Messenger\OperatorService;
 
 /**
@@ -23,6 +24,7 @@ use SmartSender\Foundation\Resources\Source\Messenger\OperatorService;
  * @property-read \SmartSender\Foundation\Resources\Source\Messenger\ChatService     $chats
  * @property-read \SmartSender\Foundation\Resources\Source\Messenger\FunnelService   $funnels
  * @property-read \SmartSender\Foundation\Resources\Source\Messenger\ChannelService  $channels
+ * @property-read \SmartSender\Foundation\Resources\Source\Messenger\MessageService  $messages
  * @property-read \SmartSender\Foundation\Resources\Source\Messenger\OperatorService $operators
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
@@ -38,6 +40,7 @@ class MessengerFactory extends Factory
             'chats' => ChatService::class,
             'funnels' => FunnelService::class,
             'channels' => ChannelService::class,
+            'messages' => MessageService::class,
             'operators' => OperatorService::class,
         ];
     }
