@@ -11,9 +11,8 @@
 
 namespace SmartSender\Foundation\Resources\Source\Console\Contacts\Selection;
 
-use SmartSender\Foundation\Service;
-use SmartSender\Contracts\Client as ClientContract;
 use SmartSender\Interaction\Responses\General\StateResponse;
+use SmartSender\Foundation\Resources\Source\Console\Contacts\SelectedContactService;
 use SmartSender\Interaction\Responses\Console\Contacts\Selection\CollectContactFunnelsResponse;
 use SmartSender\Interaction\Endpoints\Console\Contacts\Selection\Funnels\AddContactFunnelEndpoint;
 use SmartSender\Interaction\Endpoints\Console\Contacts\Selection\Funnels\RemoveContactFunnelEndpoint;
@@ -24,27 +23,8 @@ use SmartSender\Interaction\Endpoints\Console\Contacts\Selection\Funnels\Collect
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
-class SelectedContactFunnelService extends Service
+class SelectedContactFunnelService extends SelectedContactService
 {
-    /**
-     * @var int
-     */
-    private int $contactId;
-
-    /**
-     * Setup client and contact identifier.
-     *
-     * @param \SmartSender\Contracts\Client $client
-     * @param int                           $contactId
-     */
-    public function __construct(ClientContract $client, int $contactId)
-    {
-        $this->contactId = $contactId;
-
-        // boot ...
-        parent::__construct($client);
-    }
-
     /**
      * Retrieve contact funnels.
      *
@@ -63,30 +43,30 @@ class SelectedContactFunnelService extends Service
     /**
      * Add given funnel to contact.
      *
-     * @param int $funnelId
+     * @param int $serviceId
      *
      * @return \SmartSender\Interaction\Responses\General\StateResponse
      *
      * @throws \SmartSender\Exceptions\BadResponseException
      * @throws \SmartSender\Exceptions\InvalidResponseException
      */
-    public function add(int $funnelId): StateResponse
+    public function add(int $serviceId): StateResponse
     {
-        return $this->createCallee()->call(new AddContactFunnelEndpoint($this->contactId, $funnelId));
+        return $this->createCallee()->call(new AddContactFunnelEndpoint($this->contactId, $serviceId));
     }
 
     /**
      * Remove given funnel from contact.
      *
-     * @param int $funnelId
+     * @param int $serviceId
      *
      * @return \SmartSender\Interaction\Responses\General\StateResponse
      *
      * @throws \SmartSender\Exceptions\BadResponseException
      * @throws \SmartSender\Exceptions\InvalidResponseException
      */
-    public function remove(int $funnelId): StateResponse
+    public function remove(int $serviceId): StateResponse
     {
-        return $this->createCallee()->call(new RemoveContactFunnelEndpoint($this->contactId, $funnelId));
+        return $this->createCallee()->call(new RemoveContactFunnelEndpoint($this->contactId, $serviceId));
     }
 }

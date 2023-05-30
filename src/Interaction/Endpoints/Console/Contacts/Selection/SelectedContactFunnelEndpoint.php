@@ -23,7 +23,7 @@ abstract class SelectedContactFunnelEndpoint implements EndpointContract
     /**
      * @var int
      */
-    private int $funnelId;
+    private int $serviceId;
 
     /**
      * @var int
@@ -34,12 +34,12 @@ abstract class SelectedContactFunnelEndpoint implements EndpointContract
      * Setup contact and funnel identifiers.
      *
      * @param int $contactId
-     * @param int $funnelId
+     * @param int $serviceId
      */
-    public function __construct(int $contactId, int $funnelId)
+    public function __construct(int $contactId, int $serviceId)
     {
-        $this->funnelId = $funnelId;
         $this->contactId = $contactId;
+        $this->serviceId = $serviceId;
     }
 
     /**
@@ -47,7 +47,7 @@ abstract class SelectedContactFunnelEndpoint implements EndpointContract
      */
     public function getType(): string
     {
-        return sprintf('contacts/%s/funnels/%s', $this->contactId, $this->funnelId);
+        return sprintf('contacts/%s/funnels/%s', $this->contactId, $this->serviceId);
     }
 
     /**

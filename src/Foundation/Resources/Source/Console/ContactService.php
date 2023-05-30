@@ -15,7 +15,7 @@ use SmartSender\Foundation\Service;
 use SmartSender\Interaction\Endpoints\Console\Contacts\SearchContactsEndpoint;
 use SmartSender\Interaction\Endpoints\Console\Contacts\CollectContactsEndpoint;
 use SmartSender\Interaction\Responses\Console\Contacts\CollectContactsResponse;
-use SmartSender\Foundation\Resources\Source\Console\Contacts\SelectedContactService;
+use SmartSender\Foundation\Resources\Source\Console\Contacts\MainSelectedContactService;
 
 /**
  * Contact service.
@@ -29,11 +29,11 @@ class ContactService extends Service
      *
      * @param int $contactId
      *
-     * @return \SmartSender\Foundation\Resources\Source\Console\Contacts\SelectedContactService
+     * @return \SmartSender\Foundation\Resources\Source\Console\Contacts\MainSelectedContactService
      */
-    public function select(int $contactId): SelectedContactService
+    public function select(int $contactId): MainSelectedContactService
     {
-        return new SelectedContactService($this->client, $contactId);
+        return new MainSelectedContactService($this->client, $contactId);
     }
 
     /**

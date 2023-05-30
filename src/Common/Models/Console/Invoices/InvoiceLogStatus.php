@@ -9,20 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace SmartSender\Interaction\Endpoints\Console\Contacts;
+namespace SmartSender\Common\Models\Console\Invoices;
+
+use SmartSender\Common\Models\Model;
 
 /**
- * Search contacts endpoint.
+ * Console invoice log status.
+ *
+ * @property-read int    $code
+ * @property-read string $name
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
-class SearchContactsEndpoint extends CollectContactsEndpoint
+class InvoiceLogStatus extends Model
 {
-    /**
-     * @inheritDoc
-     */
-    public function getType(): string
-    {
-        return sprintf('%s/search', parent::getType());
-    }
+    //
 }

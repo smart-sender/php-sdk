@@ -11,9 +11,8 @@
 
 namespace SmartSender\Foundation\Resources\Source\Console\Contacts\Selection;
 
-use SmartSender\Foundation\Service;
-use SmartSender\Contracts\Client as ClientContract;
 use SmartSender\Interaction\Responses\General\StateResponse;
+use SmartSender\Foundation\Resources\Source\Console\Contacts\SelectedContactService;
 use SmartSender\Interaction\Endpoints\Console\Contacts\Selection\Tags\AddContactTagEndpoint;
 use SmartSender\Interaction\Responses\Console\Contacts\Selection\CollectContactTagsResponse;
 use SmartSender\Interaction\Endpoints\Console\Contacts\Selection\Tags\RemoveContactTagEndpoint;
@@ -24,27 +23,8 @@ use SmartSender\Interaction\Endpoints\Console\Contacts\Selection\Tags\CollectCon
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
-class SelectedContactTagService extends Service
+class SelectedContactTagService extends SelectedContactService
 {
-    /**
-     * @var int
-     */
-    private int $contactId;
-
-    /**
-     * Setup client and contact identifier.
-     *
-     * @param \SmartSender\Contracts\Client $client
-     * @param int                           $contactId
-     */
-    public function __construct(ClientContract $client, int $contactId)
-    {
-        $this->contactId = $contactId;
-
-        // boot ...
-        parent::__construct($client);
-    }
-
     /**
      * Retrieve contact tags.
      *

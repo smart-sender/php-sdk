@@ -11,23 +11,17 @@
 
 namespace SmartSender\Common\Models\Console;
 
-use SmartSender\Common\Models\Messenger\Funnel;
+use SmartSender\Common\Models\Model;
 
 /**
- * Console contact.
+ * Console payment system.
  *
- * @property-read \SmartSender\Common\Collection $variables
+ * @property-read int    $id
+ * @property-read string $name
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
-class Contact extends PlainContact
+class PaymentSystem extends Model
 {
-    /**
-     * @inheritdoc
-     */
-    protected const CASTERS = [
-        'tags' => Tag::class,
-        'funnels' => Funnel::class,
-        'variables' => Variable::class,
-    ];
+    //
 }

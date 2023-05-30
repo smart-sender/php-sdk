@@ -28,8 +28,8 @@ use SmartSender\Common\Models\Messenger\Funnel;
  * @property-read string      $firstName
  * @property-read string|null $lastName
  *
- * @property-read \SmartSender\Common\Models\Console\Tag      $tags
- * @property-read \SmartSender\Common\Models\Messenger\Funnel $funnels
+ * @property-read \SmartSender\Common\Collection $tags
+ * @property-read \SmartSender\Common\Collection $funnels
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

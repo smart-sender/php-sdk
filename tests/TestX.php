@@ -12,6 +12,7 @@
 namespace SmartSender\Tests;
 
 use SmartSender\Client;
+use SmartSender\Exceptions\BadResponseException;
 use SmartSender\Manager;
 
 /**
@@ -25,10 +26,26 @@ class TestX extends TestCase
 
         $manager = new Manager($client);
 
-        $response = $manager->console->contacts->select(1)->tags()->add(2);
+        try {
+            $contacts = $manager->console->contacts->collect([
+                'page' => 1,
+                'limitation' => 10,
+            ]);
+        } catch (BadResponseException $e) {
+            var_dump($e->getDescription());
 
-        $funnel = $response->getCollection()->first();
+            throw $e;
+        }
 
-        var_dump($funnel->test);
+        /** @var \SmartSender\Common\Models\Console\Contact $contact */
+        $contact = $contacts->getCollection()->first();
+
+        var_dump($contact->fullName);
+
+        $response = $manager->console->contacts->select($contact->id)->notes()->create([
+            'text' => 'Some text goes here',
+        ]);
+
+        var_dump($response->getNote()->jsonSerialize());
     }
 }

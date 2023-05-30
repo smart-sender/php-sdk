@@ -11,23 +11,24 @@
 
 namespace SmartSender\Common\Models\Console;
 
-use SmartSender\Common\Models\Messenger\Funnel;
+use SmartSender\Common\Models\Model;
 
 /**
- * Console contact.
+ * Console product essence.
  *
- * @property-read \SmartSender\Common\Collection $variables
+ * @property-read int $id
+ *
+ * @property-read string $name
+ * @property-read float  $price
+ * @property-read string $amount
+ * @property-read string $currency
+ *
+ * @property-read string $createdAt
+ * @property-read string $modifiedAt
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
-class Contact extends PlainContact
+class ProductEssence extends Model
 {
-    /**
-     * @inheritdoc
-     */
-    protected const CASTERS = [
-        'tags' => Tag::class,
-        'funnels' => Funnel::class,
-        'variables' => Variable::class,
-    ];
+    //
 }

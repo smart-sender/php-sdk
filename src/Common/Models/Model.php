@@ -12,6 +12,7 @@
 namespace SmartSender\Common\Models;
 
 use JsonSerializable;
+use SmartSender\Common\Collection;
 
 /**
  * Defines model.
@@ -68,11 +69,12 @@ class Model implements JsonSerializable
             // if nested attributes
             if (isset($caster[0]) && is_array($caster[0])) {
                 // iterate through all nested items
-                return array_map([$caster, 'create'], $value);
+                return new Collection(array_map([$caster, 'create'], $value));
             }
 
-            // creates new instance
-            return call_user_func([$caster, 'create'], $value);
+            /** @var static $caster */
+
+            return $caster::create($value);
         }
 
         return $value;

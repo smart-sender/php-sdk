@@ -36,6 +36,16 @@ class BadResponseException extends Exception
     }
 
     /**
+     * Retrieve description.
+     *
+     * @return array|null
+     */
+    public function getDescription(): ?array
+    {
+        return $this->description;
+    }
+
+    /**
      * Setup description.
      *
      * @param array $description
