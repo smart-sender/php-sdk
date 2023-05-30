@@ -17,6 +17,8 @@ use SmartSender\Interaction\Responses\General\CollectResponse;
 /**
  * Collect tags response.
  *
+ * @see \SmartSender\Interaction\Endpoints\Console\Tags\CollectTagsEndpoint
+ *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
 class CollectTagsResponse extends CollectResponse

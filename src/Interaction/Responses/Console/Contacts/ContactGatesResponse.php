@@ -18,6 +18,8 @@ use SmartSender\Interaction\Responses\General\CollectResponse;
 /**
  * Contact gates response.
  *
+ * @see \SmartSender\Interaction\Endpoints\Console\Contacts\ContactGatesEndpoint
+ *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
 class ContactGatesResponse extends CollectResponse

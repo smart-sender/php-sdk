@@ -16,6 +16,8 @@ use SmartSender\Interaction\Responses\BaseResponse;
 /**
  * Account response.
  *
+ * @see \SmartSender\Interaction\Endpoints\Console\AccountEndpoint
+ *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
 class AccountResponse extends BaseResponse

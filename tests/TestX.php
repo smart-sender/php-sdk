@@ -25,10 +25,7 @@ class TestX extends TestCase
 
         $manager = new Manager($client);
 
-        $response = $manager->messenger->funnels->collect([
-            'page' => 1,
-            'limitation' => 15,
-        ]);
+        $response = $manager->console->contacts->select(1)->tags()->add(2);
 
         $funnel = $response->getCollection()->first();
 

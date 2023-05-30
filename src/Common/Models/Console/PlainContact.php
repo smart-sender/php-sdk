@@ -39,13 +39,7 @@ class PlainContact extends Model
      * @inheritdoc
      */
     protected const CASTERS = [
-        'tags' => [
-            'nested' => true,
-            'class' => Tag::class,
-        ],
-        'funnels' => [
-            'nested' => true,
-            'class' => Funnel::class,
-        ],
+        'tags' => Tag::class,
+        'funnels' => Funnel::class,
     ];
 }

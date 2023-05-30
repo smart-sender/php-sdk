@@ -9,25 +9,25 @@
  * file that was distributed with this source code.
  */
 
-namespace SmartSender\Interaction\Responses\Console\Contacts;
+namespace SmartSender\Interaction\Responses\Console\Contacts\Selection;
 
-use SmartSender\Common\Models\Console\Contact;
+use SmartSender\Common\Models\Messenger\Funnel;
 use SmartSender\Interaction\Responses\General\CollectResponse;
 
 /**
- * Collect contacts response.
+ * Collect contact funnels response.
  *
- * @see \SmartSender\Interaction\Endpoints\Console\Contacts\CollectContactsEndpoint
+ * @see \SmartSender\Interaction\Endpoints\Console\Contacts\Selection\Funnels\CollectContactFunnelsEndpoint
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
-class CollectContactsResponse extends CollectResponse
+class CollectContactFunnelsResponse extends CollectResponse
 {
     /**
      * @inheritDoc
      */
-    protected function createModel(array $context): Contact
+    protected function createModel(array $context): Funnel
     {
-        return Contact::create($context);
+        return Funnel::create($context);
     }
 }

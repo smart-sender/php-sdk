@@ -17,6 +17,8 @@ use SmartSender\Interaction\Responses\BaseResponse;
 /**
  * Find contact response.
  *
+ * @see \SmartSender\Interaction\Endpoints\Console\Contacts\FindContactEndpoint
+ *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
 class FindContactResponse extends BaseResponse

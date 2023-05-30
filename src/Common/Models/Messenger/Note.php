@@ -9,25 +9,28 @@
  * file that was distributed with this source code.
  */
 
-namespace SmartSender\Common\Models\Console;
+namespace SmartSender\Common\Models\Messenger;
 
-use SmartSender\Common\Models\Messenger\Funnel;
+use SmartSender\Common\Models\User;
+use SmartSender\Common\Models\Model;
 
 /**
- * Console contact.
+ * Console note.
  *
- * @property-read \SmartSender\Common\Models\Console\Variable $variables
+ * @property-read int    $id
+ * @property-read string $content
+ * @property-read string $createdAt
+ *
+ * @property-read \SmartSender\Common\Models\User $user
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
-class Contact extends PlainContact
+class Note extends Model
 {
     /**
      * @inheritdoc
      */
     protected const CASTERS = [
-        'tags' => Tag::class,
-        'funnels' => Funnel::class,
-        'variables' => Variable::class,
+        'user' => User::class,
     ];
 }

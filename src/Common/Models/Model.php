@@ -66,13 +66,13 @@ class Model implements JsonSerializable
         // if caster specified
         if ($caster = $this->getCaster($name)) {
             // if nested attributes
-            if ($caster['nested'] ?? false) {
+            if (isset($caster[0]) && is_array($caster[0])) {
                 // iterate through all nested items
-                return array_map([$caster['model'], 'create'], $value);
+                return array_map([$caster, 'create'], $value);
             }
 
             // creates new instance
-            return call_user_func([$caster['model'], 'create'], $value);
+            return call_user_func([$caster, 'create'], $value);
         }
 
         return $value;

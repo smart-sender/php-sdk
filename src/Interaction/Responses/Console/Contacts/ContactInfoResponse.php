@@ -17,6 +17,8 @@ use SmartSender\Interaction\Responses\BaseResponse;
 /**
  * Contact info response.
  *
+ * @see \SmartSender\Interaction\Endpoints\Console\Contacts\ContactInfoEndpoint
+ *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
 class ContactInfoResponse extends BaseResponse

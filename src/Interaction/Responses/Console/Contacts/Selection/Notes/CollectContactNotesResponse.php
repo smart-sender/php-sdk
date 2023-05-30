@@ -9,25 +9,25 @@
  * file that was distributed with this source code.
  */
 
-namespace SmartSender\Interaction\Responses\Console\Contacts;
+namespace SmartSender\Interaction\Responses\Console\Contacts\Selection\Notes;
 
-use SmartSender\Common\Models\Console\Contact;
+use SmartSender\Common\Models\Messenger\Note;
 use SmartSender\Interaction\Responses\General\CollectResponse;
 
 /**
- * Collect contacts response.
+ * Collect contact notes response.
  *
- * @see \SmartSender\Interaction\Endpoints\Console\Contacts\CollectContactsEndpoint
+ * @see \SmartSender\Interaction\Endpoints\Console\Contacts\Selection\Notes\CollectContactNotesEndpoint
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
-class CollectContactsResponse extends CollectResponse
+class CollectContactNotesResponse extends CollectResponse
 {
     /**
      * @inheritDoc
      */
-    protected function createModel(array $context): Contact
+    protected function createModel(array $context): Note
     {
-        return Contact::create($context);
+        return Note::create($this->response->all());
     }
 }

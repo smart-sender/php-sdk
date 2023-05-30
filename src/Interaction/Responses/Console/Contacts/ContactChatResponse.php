@@ -17,6 +17,8 @@ use SmartSender\Interaction\Responses\BaseResponse;
 /**
  * Contact chat response.
  *
+ * @see \SmartSender\Interaction\Endpoints\Console\Contacts\ContactChatEndpoint
+ *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
 class ContactChatResponse extends BaseResponse

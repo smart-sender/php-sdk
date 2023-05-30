@@ -13,13 +13,15 @@ namespace SmartSender\Foundation\Resources\Source;
 
 use SmartSender\Foundation\Factory;
 use SmartSender\Foundation\Resources\Source\Console\TagService;
+use SmartSender\Foundation\Resources\Source\Console\ContactService;
 use SmartSender\Foundation\Resources\Source\Console\AccountService;
 
 /**
  * Console factory.
  *
+ * @property-read \SmartSender\Foundation\Resources\Source\Console\TagService     $tags
  * @property-read \SmartSender\Foundation\Resources\Source\Console\AccountService $account
- * @property-read \SmartSender\Foundation\Resources\Source\Console\TagService $tags
+ * @property-read \SmartSender\Foundation\Resources\Source\Console\ContactService $contacts
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
@@ -33,6 +35,7 @@ class ConsoleFactory extends Factory
         return [
             'tags' => TagService::class,
             'account' => AccountService::class,
+            'contacts' => ContactService::class,
         ];
     }
 }

@@ -25,6 +25,9 @@ use SmartSender\Interaction\Endpoints\Console\Contacts\ContactGatesEndpoint;
 use SmartSender\Interaction\Responses\Console\Contacts\ContactGatesResponse;
 use SmartSender\Interaction\Endpoints\Console\Contacts\UniteContactsEndpoint;
 use SmartSender\Interaction\Endpoints\Console\Contacts\UpdateContactEndpoint;
+use SmartSender\Foundation\Resources\Source\Console\Contacts\Selection\SelectedContactTagService;
+use SmartSender\Foundation\Resources\Source\Console\Contacts\Selection\SelectedContactNoteService;
+use SmartSender\Foundation\Resources\Source\Console\Contacts\Selection\SelectedContactFunnelService;
 
 /**
  * Selected contact service.
@@ -50,6 +53,36 @@ class SelectedContactService extends Service
 
         // boot ...
         parent::__construct($client);
+    }
+
+    /**
+     * Tags manager.
+     *
+     * @return \SmartSender\Foundation\Resources\Source\Console\Contacts\Selection\SelectedContactTagService
+     */
+    public function tags(): SelectedContactTagService
+    {
+        return new SelectedContactTagService($this->client, $this->contactId);
+    }
+
+    /**
+     * Notes manager.
+     *
+     * @return \SmartSender\Foundation\Resources\Source\Console\Contacts\Selection\SelectedContactNoteService
+     */
+    public function notes(): SelectedContactNoteService
+    {
+        return new SelectedContactNoteService($this->client, $this->contactId);
+    }
+
+    /**
+     * Funnels manager.
+     *
+     * @return \SmartSender\Foundation\Resources\Source\Console\Contacts\Selection\SelectedContactFunnelService
+     */
+    public function funnels(): SelectedContactFunnelService
+    {
+        return new SelectedContactFunnelService($this->client, $this->contactId);
     }
 
     /**

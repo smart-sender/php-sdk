@@ -38,17 +38,9 @@ class Message extends Model
      * @inheritdoc
      */
     protected const CASTERS = [
-        'gate' => [
-            'class' => Gate::class,
-        ],
-        'state' => [
-            'class' => State::class,
-        ],
-        'sender' => [
-            'class' => Sender::class,
-        ],
-        'content' => [
-            'class' => Template::class,
-        ],
+        'gate' => Gate::class,
+        'state' => State::class,
+        'sender' => Sender::class,
+        'content' => Template::class,
     ];
 }
