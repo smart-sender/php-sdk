@@ -14,7 +14,7 @@ namespace SmartSender;
 use SmartSender\Contracts\Client as ClientContract;
 
 /**
- * Base client.
+ * Package client.
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */

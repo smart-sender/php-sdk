@@ -37,6 +37,16 @@ class Collection
     }
 
     /**
+     * Verifies for collection elements.
+     *
+     * @return bool
+     */
+    public function any(): bool
+    {
+        return !empty($this->context);
+    }
+
+    /**
      * Retrieve collection values.
      *
      * @return array

@@ -14,7 +14,7 @@ namespace SmartSender;
 use SmartSender\Common\Accessor;
 
 /**
- * Platform config.
+ * Package config.
  *
  * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
  */
