@@ -29,7 +29,7 @@ use SmartSender\Interaction\Endpoints\Messenger\Channels\CollectChannelsEndpoint
 class ChannelService extends Service
 {
     /**
-     * Retrieve given channel.
+     * Allows you to view the connected channel in the project by ID.
      *
      * @param int $channelId
      *
@@ -44,7 +44,7 @@ class ChannelService extends Service
     }
 
     /**
-     * Retrieve channels.
+     * Allows you to view the connected channels in the project.
      *
      * @param array $resource
      *
@@ -59,7 +59,7 @@ class ChannelService extends Service
     }
 
     /**
-     * Update given channel with in context.
+     * Allows you to change the activity of the selected channel.
      *
      * @param int   $channelId
      * @param array $resource

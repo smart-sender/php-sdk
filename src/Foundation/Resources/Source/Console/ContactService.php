@@ -27,7 +27,7 @@ use SmartSender\Foundation\Resources\Source\Console\Contacts\MainSelectedContact
 class ContactService extends Service
 {
     /**
-     * Select given contact identifier.
+     * Creates selected contact service.
      *
      * @param int $contactId
      *
@@ -39,7 +39,7 @@ class ContactService extends Service
     }
 
     /**
-     * Search contacts.
+     * Allows you to find matches for contacts using a keyword.
      *
      * @param array $resource
      *
@@ -54,7 +54,7 @@ class ContactService extends Service
     }
 
     /**
-     * Retrieve contacts.
+     * Allows you to get a list of contacts in the project.
      *
      * @param array $resource
      *

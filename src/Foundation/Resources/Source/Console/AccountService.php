@@ -25,7 +25,7 @@ use SmartSender\Interaction\Responses\Console\AccountResponse;
 class AccountService extends Service
 {
     /**
-     * Retrieve me.
+     * Allows you to get information about the current project.
      *
      * @return \SmartSender\Interaction\Responses\Console\AccountResponse
      *

@@ -28,7 +28,7 @@ use SmartSender\Interaction\Endpoints\Console\Contacts\Selection\Funnels\Collect
 class SelectedContactFunnelService extends SelectedContactService
 {
     /**
-     * Retrieve contact funnels.
+     * Allows you to view the funnel subscriptions of the selected contact.
      *
      * @param array $resource
      *
@@ -43,7 +43,7 @@ class SelectedContactFunnelService extends SelectedContactService
     }
 
     /**
-     * Add given funnel to contact.
+     * Allows you to add a funnel subscription to the selected contact.
      *
      * @param int $serviceId
      *
@@ -58,7 +58,7 @@ class SelectedContactFunnelService extends SelectedContactService
     }
 
     /**
-     * Remove given funnel from contact.
+     * Allows you to remove the funnel subscription of the selected contact.
      *
      * @param int $serviceId
      *

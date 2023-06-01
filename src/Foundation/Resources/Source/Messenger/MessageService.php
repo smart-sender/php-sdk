@@ -29,7 +29,7 @@ use SmartSender\Interaction\Endpoints\Messenger\Messages\CollectChatMessagesEndp
 class MessageService extends Service
 {
     /**
-     * Retrieve messages.
+     * Allows you to send a message to a contact (with the ability to select a channel).
      *
      * @param int   $contactId
      * @param array $resource
@@ -45,7 +45,7 @@ class MessageService extends Service
     }
 
     /**
-     * Retrieve messages.
+     * Allows you to receive a message through a contact.
      *
      * @param int   $contactId
      * @param array $resource
@@ -61,7 +61,7 @@ class MessageService extends Service
     }
 
     /**
-     * Retrieve messages from chat.
+     * Allows you to receive a message via chat.
      *
      * @param int   $chatId
      * @param array $resource

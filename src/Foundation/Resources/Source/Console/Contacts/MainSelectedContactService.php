@@ -39,7 +39,7 @@ use SmartSender\Foundation\Resources\Source\Console\Contacts\Selection\SelectedC
 class MainSelectedContactService extends SelectedContactService
 {
     /**
-     * Tags manager.
+     * Creates tags manager.
      *
      * @return \SmartSender\Foundation\Resources\Source\Console\Contacts\Selection\SelectedContactTagService
      */
@@ -49,7 +49,7 @@ class MainSelectedContactService extends SelectedContactService
     }
 
     /**
-     * Notes manager.
+     * Creates notes manager.
      *
      * @return \SmartSender\Foundation\Resources\Source\Console\Contacts\Selection\SelectedContactNoteService
      */
@@ -59,7 +59,7 @@ class MainSelectedContactService extends SelectedContactService
     }
 
     /**
-     * Funnels manager.
+     * Creates funnels manager.
      *
      * @return \SmartSender\Foundation\Resources\Source\Console\Contacts\Selection\SelectedContactFunnelService
      */
@@ -69,7 +69,7 @@ class MainSelectedContactService extends SelectedContactService
     }
 
     /**
-     * Invoices manager.
+     * Creates invoices manager.
      *
      * @return \SmartSender\Foundation\Resources\Source\Console\Contacts\Selection\SelectedContactInvoiceService
      */
@@ -79,7 +79,7 @@ class MainSelectedContactService extends SelectedContactService
     }
 
     /**
-     * Checkout manager.
+     * Creates checkout manager.
      *
      * @return \SmartSender\Foundation\Resources\Source\Console\Contacts\Selection\SelectedContactCheckoutService
      */
@@ -89,7 +89,7 @@ class MainSelectedContactService extends SelectedContactService
     }
 
     /**
-     * Find contact chat.
+     * Getting a contact's chat by ID.
      *
      * @return \SmartSender\Interaction\Responses\Console\Contacts\ContactChatResponse
      *
@@ -102,7 +102,7 @@ class MainSelectedContactService extends SelectedContactService
     }
 
     /**
-     * Retrieve contact gates.
+     * Get a list of available communications for a contact by ID.
      *
      * @param array $resource
      *
@@ -117,7 +117,7 @@ class MainSelectedContactService extends SelectedContactService
     }
 
     /**
-     * Retrieve contact info.
+     * Getting information about a contact by ID (simple).
      *
      * @return \SmartSender\Interaction\Responses\Console\Contacts\ContactInfoResponse
      *
@@ -130,7 +130,7 @@ class MainSelectedContactService extends SelectedContactService
     }
 
     /**
-     * Retrieve given contact.
+     * Getting information about a contact by ID.
      *
      * @return \SmartSender\Interaction\Responses\Console\Contacts\FindContactResponse
      *
@@ -143,7 +143,7 @@ class MainSelectedContactService extends SelectedContactService
     }
 
     /**
-     * Fire event for contact.
+     * Triggers the selected event for the contact.
      *
      * @param array $resource
      *
@@ -158,7 +158,8 @@ class MainSelectedContactService extends SelectedContactService
     }
 
     /**
-     * Unite given contacts.
+     * Connects one client with another. All tags, funnels, variables will be synchronized
+     * in favor of {contactId}, and all missing values will be taken from {targetContactId}.
      *
      * @param int $targetContactId
      *
@@ -173,7 +174,7 @@ class MainSelectedContactService extends SelectedContactService
     }
 
     /**
-     * Update given contact.
+     * Updates the data of the selected client.
      *
      * @param array $resource
      *

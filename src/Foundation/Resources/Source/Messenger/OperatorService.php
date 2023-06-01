@@ -27,7 +27,7 @@ use SmartSender\Interaction\Endpoints\Messenger\Operators\SetOperatorInvolvement
 class OperatorService extends Service
 {
     /**
-     * Retrieve funnels.
+     * Allows you to view the connected operators in the project.
      *
      * @param array $resource
      *
@@ -42,7 +42,7 @@ class OperatorService extends Service
     }
 
     /**
-     * Setup operator involvement.
+     * Allows you to change the status of automatic assignment by the system of incoming chat between operators.
      *
      * @param int   $operatorId
      * @param array $resource

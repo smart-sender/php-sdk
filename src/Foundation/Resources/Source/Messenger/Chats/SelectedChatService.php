@@ -52,7 +52,7 @@ class SelectedChatService extends Service
     }
 
     /**
-     * Find given chat.
+     * Allows you to get information about the specified chat.
      *
      * @return \SmartSender\Interaction\Responses\Messenger\Chats\FindChatResponse
      *
@@ -65,7 +65,7 @@ class SelectedChatService extends Service
     }
 
     /**
-     * Read given chat.
+     * Allows you to read all notifications in the selected chat.
      *
      * @return \SmartSender\Interaction\Responses\General\StateResponse
      *
@@ -78,7 +78,7 @@ class SelectedChatService extends Service
     }
 
     /**
-     * Close given chat.
+     * Allows you to close the selected chat.
      *
      * @return \SmartSender\Interaction\Responses\General\StateResponse
      *
@@ -91,7 +91,7 @@ class SelectedChatService extends Service
     }
 
     /**
-     * Retrieve chat messages.
+     * Allows you to receive messages in the selected chat.
      *
      * @param array $resource
      *
@@ -106,7 +106,7 @@ class SelectedChatService extends Service
     }
 
     /**
-     * Forward given chat.
+     * Allows you to assign the selected chat to a specific operator.
      *
      * @param int   $operatorId
      * @param array $resource

@@ -30,7 +30,7 @@ use SmartSender\Interaction\Responses\Console\Variables\CollectVariablesResponse
 class VariableService extends Service
 {
     /**
-     * Retrieve tags.
+     * Allows you to view the created variables in the project.
      *
      * @param array $resource
      *
@@ -45,7 +45,7 @@ class VariableService extends Service
     }
 
     /**
-     * Creates new tag.
+     * Allows you to create a new variable in the project.
      *
      * @param array $resource
      *
@@ -60,7 +60,7 @@ class VariableService extends Service
     }
 
     /**
-     * Update given tag.
+     * Allows you to update an existing variable.
      *
      * @param int   $tagId
      * @param array $resource
@@ -76,7 +76,7 @@ class VariableService extends Service
     }
 
     /**
-     * Delete given tag.
+     * Allows you to delete an existing variable.
      *
      * @param int $tagId
      *

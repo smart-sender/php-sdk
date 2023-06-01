@@ -30,7 +30,7 @@ use SmartSender\Interaction\Responses\Console\Contacts\Selection\Notes\CollectCo
 class SelectedContactNoteService extends SelectedContactService
 {
     /**
-     * Retrieve contact notes.
+     * Get a list of created notes for a contact.
      *
      * @param array $resource
      *
@@ -45,7 +45,7 @@ class SelectedContactNoteService extends SelectedContactService
     }
 
     /**
-     * Creates note for contact.
+     * Create a note for a contact.
      *
      * @param array $resource
      *
@@ -60,7 +60,7 @@ class SelectedContactNoteService extends SelectedContactService
     }
 
     /**
-     * Add given tag to contact.
+     *Allows you to update the selected notes of the contact.
      *
      * @param int   $noteId
      * @param array $resource
@@ -76,7 +76,7 @@ class SelectedContactNoteService extends SelectedContactService
     }
 
     /**
-     * Remove given tag from contact.
+     * Allows you to delete the selected note from the contact.
      *
      * @param int $noteId
      *

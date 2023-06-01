@@ -29,7 +29,7 @@ use SmartSender\Interaction\Responses\Console\Contacts\Selection\Invoices\Collec
 class SelectedContactInvoiceService extends SelectedContactService
 {
     /**
-     * Retrieve contact invoices.
+     * Allows you to view the created accounts of the selected contact in the project.
      *
      * @param array $resource
      *
@@ -44,7 +44,7 @@ class SelectedContactInvoiceService extends SelectedContactService
     }
 
     /**
-     * Creates contact invoice.
+     * Create a new account for a contact.
      *
      * @param array $resource
      *
@@ -59,7 +59,7 @@ class SelectedContactInvoiceService extends SelectedContactService
     }
 
     /**
-     * Retrieve given invoice.
+     * Getting the contact's invoice by number (orderId).
      *
      * @param string $orderId
      *
@@ -74,7 +74,11 @@ class SelectedContactInvoiceService extends SelectedContactService
     }
 
     /**
-     * Record given invoice.
+     * Manual payment.
+     *
+     * Pays the specified invoice (or creates one if it didn't already exist) for the specified contact.
+     * If the payment amount is less than the actual amount on the issued invoice,
+     * the invoice will still be successfully paid.
      *
      * @param array $resource
      *

@@ -30,7 +30,7 @@ use SmartSender\Interaction\Responses\Console\Products\CollectProductsResponse;
 class ProductService extends Service
 {
     /**
-     * Retrieve products.
+     * Allows you to view the created products in the project.
      *
      * @param array $resource
      *
@@ -45,7 +45,7 @@ class ProductService extends Service
     }
 
     /**
-     * Creates new product.
+     * Allows you to create a product in a project.
      *
      * @param array $resource
      *
@@ -60,7 +60,7 @@ class ProductService extends Service
     }
 
     /**
-     * Update given product.
+     * Allows you to update the selected product in the project.
      *
      * @param int   $productId
      * @param array $resource
@@ -76,7 +76,7 @@ class ProductService extends Service
     }
 
     /**
-     * Delete given product.
+     * Allows you to remove an existing product.
      *
      * @param int $productId
      *

@@ -47,7 +47,7 @@ class SelectedCashierService extends Service
     }
 
     /**
-     * Retrieve given cashier.
+     * Allows you to get information about the specified payment system.
      *
      * @return \SmartSender\Interaction\Responses\Console\Cashiers\FindCashierResponse
      *
@@ -60,7 +60,7 @@ class SelectedCashierService extends Service
     }
 
     /**
-     * Retrieve cashier logs.
+     * Allows you to get information about payments in the specified payment system.
      *
      * @return \SmartSender\Interaction\Responses\Console\Cashiers\CashierLogsResponse
      *

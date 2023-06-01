@@ -28,7 +28,7 @@ use SmartSender\Interaction\Endpoints\Console\Contacts\Selection\Tags\CollectCon
 class SelectedContactTagService extends SelectedContactService
 {
     /**
-     * Retrieve contact tags.
+     * Allows you to view the tags of the selected contact.
      *
      * @param array $resource
      *
@@ -43,7 +43,7 @@ class SelectedContactTagService extends SelectedContactService
     }
 
     /**
-     * Add given tag to contact.
+     * Allows you to add a tag to the selected contact.
      *
      * @param int $tagId
      *
@@ -58,7 +58,7 @@ class SelectedContactTagService extends SelectedContactService
     }
 
     /**
-     * Remove given tag from contact.
+     * Allows you to remove a tag for the selected contact.
      *
      * @param int $tagId
      *

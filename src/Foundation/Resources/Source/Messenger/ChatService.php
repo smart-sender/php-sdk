@@ -27,7 +27,7 @@ use SmartSender\Foundation\Resources\Source\Messenger\Chats\SelectedChatService;
 class ChatService extends Service
 {
     /**
-     * Select given chat identifier.
+     * Creates selected chat service.
      *
      * @param int $chatId
      *
@@ -39,7 +39,7 @@ class ChatService extends Service
     }
 
     /**
-     * Retrieve chats.
+     * Allows you to view existing chats.
      *
      * @param array $resource
      *

@@ -26,7 +26,7 @@ use SmartSender\Foundation\Resources\Source\Console\Cashiers\SelectedCashierServ
 class CashierService extends Service
 {
     /**
-     * Select given cashier.
+     * Creates selected cashier service.
      *
      * @param int $cashierId
      *
@@ -38,7 +38,7 @@ class CashierService extends Service
     }
 
     /**
-     * Retrieve cashiers.
+     * Allows you to view the connected payment systems in the project.
      *
      * @param array $resource
      *

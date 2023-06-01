@@ -27,7 +27,7 @@ use SmartSender\Interaction\Responses\Messenger\Funnels\CollectFunnelsResponse;
 class FunnelService extends Service
 {
     /**
-     * Select given funnel identifier.
+     * Allows you to view the created funnels.
      *
      * @param int $funnelId
      *
@@ -42,7 +42,7 @@ class FunnelService extends Service
     }
 
     /**
-     * Retrieve funnels.
+     * Allows you to get information about the selected funnel.
      *
      * @param array $resource
      *

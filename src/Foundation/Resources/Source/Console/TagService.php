@@ -30,7 +30,7 @@ use SmartSender\Interaction\Responses\Console\Tags\CollectTagsResponse;
 class TagService extends Service
 {
     /**
-     * Retrieve tags.
+     * Allows you to view the created tags in the project.
      *
      * @param array $resource
      *
@@ -45,7 +45,7 @@ class TagService extends Service
     }
 
     /**
-     * Creates new tag.
+     * Allows you to create a tag in a project.
      *
      * @param array $resource
      *
@@ -60,7 +60,7 @@ class TagService extends Service
     }
 
     /**
-     * Update given tag.
+     * Allows you to update an existing tag.
      *
      * @param int   $tagId
      * @param array $resource
@@ -76,7 +76,7 @@ class TagService extends Service
     }
 
     /**
-     * Delete given tag.
+     * Allows you to delete an existing tag.
      *
      * @param int $tagId
      *

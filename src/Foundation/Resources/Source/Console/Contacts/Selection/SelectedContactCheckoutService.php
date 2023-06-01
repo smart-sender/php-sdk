@@ -25,7 +25,7 @@ use SmartSender\Interaction\Endpoints\Console\Contacts\Selection\Checkout\Collec
 class SelectedContactCheckoutService extends SelectedContactService
 {
     /**
-     * Retrieve contact funnels.
+     * Allows you to view the basket of the selected contact.
      *
      * @param array $resource
      *
