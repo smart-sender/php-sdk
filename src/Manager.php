@@ -27,7 +27,7 @@ class Manager
     /**
      * @var \SmartSender\Contracts\Client
      */
-    private ClientContract $client;
+    public ClientContract $client;
 
     /**
      * @var \SmartSender\Foundation\Resources\CoreFactory|null
@@ -42,6 +42,18 @@ class Manager
     public function __construct(ClientContract $client)
     {
         $this->client = $client;
+    }
+
+    /**
+     * Creates from access token.
+     *
+     * @param string $accessToken
+     *
+     * @return static
+     */
+    public static function withToken(string $accessToken): self
+    {
+        return new self(new Client($accessToken));
     }
 
     /**
