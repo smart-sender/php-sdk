@@ -37,7 +37,7 @@ class Config
      */
     private function __construct()
     {
-        $this->values = include '../config/sws.php';
+        $this->values = include __DIR__.'/../config/sws.php';
     }
 
     /**

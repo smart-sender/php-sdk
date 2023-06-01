@@ -2,11 +2,12 @@
   "name": "smart-sender/php-sdk",
   "description": "PHP library for the Smart Sender API.",
   "keywords": ["smart-sender", "sdk", "api"],
+  "homepage": "https://smartsender.com/",
   "license": "MIT",
   "authors": [
     {
-      "name": "Smart Sender",
-      "email": "legal@smartsender.com"
+      "name": "Oleksandr Serdiuk",
+      "email": "serdiuk@smartsender.com"
     }
   ],
   "require": {
@@ -27,7 +28,5 @@
     "psr-4": {
       "SmartSender\\Tests\\": "tests/"
     }
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+  }
 }
