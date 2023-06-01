@@ -1,7 +1,5 @@
 # SmartSender PHP bindings
 
-[![Latest Stable Version](https://poser.pugx.org/smart-sender/php-sdk/v/stable.svg)](https://packagist.org/packages/smart-sender/php-sdk)
-[![Total Downloads](https://poser.pugx.org/smart-sender/php-sdk/downloads.svg)](https://packagist.org/packages/smart-sender/php-sdk)
 [![License](https://poser.pugx.org/smart-sender/php-sdk/license.svg)](https://packagist.org/packages/smart-sender/php-sdk)
 
 The Smart Sender PHP library provides convenient access to the Smart Sender API from
