@@ -3,7 +3,7 @@
 /**
  * This file is part of Smart Web Services package
  *
- * (c) Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
+ * (c) Serdiuk Oleksandr <serdiuk@smartsender.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -24,7 +24,7 @@ use SmartSender\Interaction\Responses\Console\Contacts\Selection\Invoices\Collec
  *
  * @link https://smartsendereu.atlassian.net/wiki/spaces/docsru/pages/1676411989/Contact+Invoices+API+-+en
  *
- * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
+ * @author Serdiuk Oleksandr <serdiuk@smartsender.com>
  */
 class SelectedContactInvoiceService extends SelectedContactService
 {

@@ -3,7 +3,7 @@
 /**
  * This file is part of Smart Web Services package
  *
- * (c) Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
+ * (c) Serdiuk Oleksandr <serdiuk@smartsender.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -22,7 +22,7 @@ use SmartSender\Common\Models\Model;
  * @property-read string $image
  * @property-read string $fullName
  *
- * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
+ * @author Serdiuk Oleksandr <serdiuk@smartsender.com>
  */
 class Sender extends Model
 {

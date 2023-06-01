@@ -3,7 +3,7 @@
 /**
  * This file is part of Smart Web Services package
  *
- * (c) Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
+ * (c) Serdiuk Oleksandr <serdiuk@smartsender.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -20,7 +20,7 @@ use SmartSender\Contracts\Client as ClientContract;
  * @property-read \SmartSender\Foundation\Resources\Source\ConsoleFactory   $console
  * @property-read \SmartSender\Foundation\Resources\Source\MessengerFactory $messenger
  *
- * @author Serdiuk Oleksandr <serdiuk.oleksandr@gmail.com>
+ * @author Serdiuk Oleksandr <serdiuk@smartsender.com>
  */
 class Manager
 {
